@@ -710,37 +710,39 @@ body.nav-opened .nav {
     counter-reset: item;
 }
 
-.nav li:before {
-    display: block;
-    float: right;
+.nav li {
+    margin: 0;
+    display: flex;
+    align-items: baseline;
     padding-right: 4%;
-    padding-left: 5px;
-    text-align: right;
+}
+.nav li:before {
+    order: 3;
     font-size: 1.2rem;
-    vertical-align: bottom;
     color: #B8B8B8;
     content: counter(item, lower-roman);
     counter-increment: item;
-}
-.nav li {
-    margin: 0;
+    padding-left: 5px;
 }
 .nav li a {
     text-decoration: none;
     line-height: 1.4;
     font-size: 1.4rem;
-    display: block;
-    padding: 0.6rem 4%;
-    overflow: hidden;
+    padding: 0.6rem 0 0.6rem 4%;
     white-space: nowrap;
-    text-overflow: ellipsis;
+    order: 1;
+}
+.nav li:after {
+    content: "";
+    order: 2;
+    flex-grow: 1;
+    border-bottom: 2px dotted rgba(255,255,255,0.2);
+    margin: 0 10px;
 }
 .nav li a:after {
-    display: inline-block;
-    content: "........................";
-    color: rgba(255,255,255,0.2);
-    margin-left: 5px;
+    display: none;
 }
+
 .nav .nav-current:before {
     color: #fff;
 }
