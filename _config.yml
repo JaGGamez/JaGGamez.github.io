@@ -4,14 +4,14 @@
 markdown: kramdown
 highlighter: rouge
 paginate: 5
-language: 'en-uk'
+language: 'en'
 
 # Website info
 name: 'Jacob González Gámez'
-description: "The story begins here."
-#short_url: 'jekyllt.github.io/jasper/'
-#google_analytics: UA-69281367-1
-#disqus: username
+description: "A multifaceted mind: D&A Engineer merging Project Management with Electrical & Electromechanical Engineering, fueled by a passion for live music."
+short_url: 'jaggamez.github.io'
+#google_analytics: UA-XXXXXXXXX-X
+disqus: username
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 baseurl: /
 
@@ -45,12 +45,12 @@ plugins: [jekyll-paginate]
 safe: false
 lsi: false
 username: JaGGamez
-repo: jasper
+repo: jaggamez.github.io
 branch: master
-relative_source: ../jasper/
-destination: ../jasper-pages/
-production_url:  https://jekyllt.github.io/jasper/
-source_url:  https://github.com/jekyllt/jasper/
+relative_source: ../jaggamez.github.io/
+destination: ../jaggamez.github.io-pages/
+production_url:  https://jaggamez.github.io/
+source_url:  https://github.com/JaGGamez/jaggamez.github.io/
 
 exclude:
   - README.md
